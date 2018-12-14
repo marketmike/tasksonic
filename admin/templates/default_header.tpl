@@ -1,0 +1,1 @@
+<img src="{$Templates_Image}logo.png" width="327" height="67" style="float:left;" />

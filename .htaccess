@@ -1,0 +1,78 @@
+RewriteEngine on
+
+RewriteRule ^home\.html$ /home.php
+
+RewriteRule ^index\.html$ /index.php
+
+RewriteRule ^page_([0-9]+)\.html$ /page.php?pid=$1
+
+RewriteRule ^signup\.html$ /signup.php
+
+RewriteRule ^signup_success\.html$ /signup_success.php
+
+RewriteRule ^forgotpasswd_success\.html$ /forgotpasswd_success.php
+
+RewriteRule ^contact_success\.html$ /contact_success.php
+
+RewriteRule ^new_task_post_success\.html$ /post_task_sucessfully.php
+
+RewriteRule ^task_owner_profile_([a-zA-Z0-9-]+)\.html$ /viewtask_ownerprofile.php?user=$1 [L]
+
+RewriteRule ^tasker_profile_([a-zA-Z0-9-]+)\.html$ /viewtaskerprofile.php?user=$1 [L]
+
+RewriteRule ^tasker_portfolio_([a-zA-Z0-9-]+)\.html$ /seller_portfoilo.php?user_name=$1 [L]
+
+RewriteRule ^contact_([a-zA-Z0-9-]+)\.html$ /contact.php?user_name=$1 [L]
+
+RewriteRule ^portfolio_([a-zA-Z0-9-]+)_([0-9]+)\.html$ /view_protfolio.php?username=$1&portid=$2 [L]
+
+RewriteRule ^post_task_([a-zA-Z0-9-]+)\.html$ /post_task.php?user_name=$1 [L]
+
+RewriteRule ^task_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /task.php?id=$1 [L]
+
+RewriteRule ^edit_task_success_([a-zA-Z0-9]+)\.html$ /edit_task_success.php?pro_id=$1 [L]
+
+RewriteRule ^extend_task_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /extend_task.php?id=$1 [L]
+
+RewriteRule ^edit_task_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /edit_task.php?id=$1 [L]
+
+RewriteRule ^shortlist_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /shortlist.php?id=$1 [L]
+
+RewriteRule ^decline_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /decline.php?id=$1 [L]
+
+RewriteRule ^extend_task_success_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /extend_task_success.php?pro_id=$1&days=$2 [L]
+
+RewriteRule ^close_task_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /close_project.php?id=$1 [L]
+
+RewriteRule ^award_task_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /award_task.php?id=$1&proj_name=$2 [L]
+
+RewriteRule ^accept_project_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /accept_project.php?id=$1 [L]
+
+RewriteRule ^violation_success\.html$ /violation_success.php
+
+RewriteRule ^accept_task_success\.html$ /accept_project_success.php
+
+RewriteRule ^membership_buy_success\.html$ /membership_buy_success.php
+
+RewriteRule ^escrow_success\.html$ /escrow_success.php
+
+RewriteRule ^place_bid_([a-zA-Z0-9]+)_(.[^/]+)\.html$ /place_bid.php?project=$1&proj_name=$2 [L]
+
+RewriteRule ^([a-zA-Z0-9-]+)_task_owner_feedback\.html$ /task_owner_feedback.php?user=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9-]+)_tasker_feedback\.html$ /tasker_feedback.php?user=$1 [L]
+
+RewriteRule ^release_payment_([0-9]+)\.html$ /release_escrow_payment.php?id=$1 [L]
+
+RewriteRule ^cancel_payment_([a-zA-Z0-9]+)\.html$ /cancel_escrow_payment.php?id=$1 [L]
+
+RewriteRule ^less_balance_([0-9]+)([a-zA-Z0-9-]+)([0-9]+)\.html$ /less_balance_buyer.php?project_id=$1&awarded_user=$2&error=$3 [L]
+
+RewriteRule ^category_([0-9]+)\.html$ /category.php?cat_id=$1 [L]
+
+RewriteRule ^less_balance_([0-9]+)\.html$ /less_balance.php?re_amount=$1 [L]
+
+RewriteRule ^republish_post_task_([a-zA-Z0-9-]+)_(.[^/]+)\.html$ /republish_post_task.php?project_id=$1 [L]
+
+ErrorDocument 404 /404.php
+AddType text/xml .xml .xsl

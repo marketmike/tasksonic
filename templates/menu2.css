@@ -1,0 +1,144 @@
+/* Vertical Navigation */
+ul {
+	padding: 3px 10px 10px 40px;
+	line-height: 1.6em;
+	margin: 0px;
+}
+
+ul#navvert {
+	display: block;
+	border: 0;
+	margin: 5px 25px 16px 20px;
+	padding: 0;
+width: 270px;
+	list-style-type: none;
+	border-top: 4px solid #3A545A;
+	border-bottom: 4px solid #3A545A;
+	background: #58808A;
+float: right;
+
+}
+
+ul#navvert li { display: block; }
+
+ul#navvert li a {
+	display: block;
+	height: 23px;
+	font-family: Verdana, Arial, Helvetica, sans-serif, sans;
+        font-size: 1.2em;
+border-left: 1px dotted #58808a;
+border-top: 1px dotted #58808a;
+border-bottom: 1px dotted #58808a;
+	padding: 3px 12px 0px 12px;
+	border-right: none;
+	color: #D5DFE2;
+	font-size: 12px;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+background-color: #527680;
+	cursor: pointer;
+}
+
+ul#navvert li.odd a {
+	display: block;
+	height: 23px;
+border-left: 1px dotted #58808a;
+border-top: 1px dotted #58808a;
+border-bottom: 1px dotted #58808a;
+	padding: 3px 12px 0px 12px;
+	border-right: none;
+	color: #D5DFE2;
+background-color: #4B6974;
+	font-size: 12px;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+ul#navvert li a:hover {
+	background-color: #96090A;
+	color: #fff;
+	text-decoration: underline;
+border-left: 1px dotted #628F9B;
+border-top: 1px dotted #628F9B;
+border-bottom: 1px dotted #628F9B;
+}
+
+ul#navvert li a.active, ul#navvert li a.active:hover {
+	height: 23px;
+color: #fff;
+	background: #3D515C;
+	cursor: default;
+font-weight: bold;
+}
+ul#navvert li a.active:after { content: "\00A0\00BB" attr(cite); }
+
+
+/* Horizontal Navigation */
+
+ul#nav {
+	display: block;
+	height: 35px;
+	
+	border: 0;
+	margin: 0px 0px 6px 0px;
+	padding: 0;
+	list-style-type: none;
+border-top: 4px solid #3A545A;
+border-bottom: 1px solid #3A545A;
+	background: #58808A;
+
+}
+
+ul#nav li { display: inline; }
+
+ul#nav li a {
+	display: block;
+	float: left;
+	height: 33px;
+	margin: 0;
+	background: no-repeat 9px 5px;
+	padding: 7px 12px 0px 12px;
+	border-right: none;
+	color: #D5DFE2;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	cursor: pointer;
+	font-family: Verdana,Arial,Helvetica,sans-serif,sans;
+	
+}
+
+ul#nav img {
+	position: relative;
+	top: 4px;
+	left: -3px;
+}
+
+ul#nav li a:hover {
+	background-color: #96090A;
+	color: #fff;
+height: 35px;
+	text-decoration: underline;
+}
+
+ul#nav li a.active, ul#nav li a.active:hover {
+	height: 28px;
+color: #fff;
+	background: #3D515C;
+	cursor: default;
+font-weight: bold;
+}
+ul#nav li a.active:after { content: "\00A0\00BB" attr(cite); }
+
+
+
+
+
+
+
+

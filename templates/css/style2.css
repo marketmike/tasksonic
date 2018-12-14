@@ -1,0 +1,388 @@
+/* ----------------------------------------------------------------------------------------------------------
+
+    Output device: screen, projection
+
+   
+    Update:     2008-07-29, 18:30 GMT+1
+    Version:    2.2.6 (2008-07-13, 14:28 GMT+1)
+
+    Structure:
+        display; position; z-index; float; clear; width; height; overflow; margin; padding; border; background; align; font;
+
+    Content:
+
+        1) HTML tags
+        2) HTML styles
+        3) Layout
+        4-1) Page: Homepage
+        5) Others
+
+---------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------------
+1) HTML tags
+---------------------------------------------------------------------------------------------------------- */
+
+body {background: url("images/bg.png") repeat-x  scroll 0 0 transparent; color:#404040}
+
+a {color:#404040;}
+a:hover {color:#000;}
+
+/* ----------------------------------------------------------------------------------------------------------
+2) HTML styles
+---------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------------
+3) Layout
+---------------------------------------------------------------------------------------------------------- */
+
+.clear{clear:both;}
+.clearwspace{clear:both;margin-bottom:20px;}
+    #nav span {color:#DDD;}
+    #nav #nav-active {color:#DD1600;}
+
+    #tray {background-color:#BFBFBF;}
+    #tray li a {color:#404040;}
+    #tray li#tray-active a {background-color:#DD1600; color:#FFF;}
+    #tray li a:hover {background-color:#9F9F9F; color:#FFF;}
+
+        #search #search-input {background-color:#FFF;}
+        #search #search-input input {color:#404040;}
+
+    #footer, #footer a {color:#9f9f9f;}
+    #footer a:hover {color:#404040;}
+
+/* ----------------------------------------------------------------------------------------------------------
+4-1) Page: Homepage
+---------------------------------------------------------------------------------------------------------- */
+
+#col-top, #col-bottom, #col {background-color:#E9FAFF;}
+
+#cols3 .col h3 {background-color:#F5F5F5; color:#DD1600;}
+#cols3 .col h3 a {color:#DD1600;}
+#cols3 .col h3 a:hover {color:#000;}
+#cols3 .col-more {background:#F5F5F5;}
+
+#cols2 #col-left .title h4, #cols2 #col-right h4 {color:#DD1600;}
+#cols2 #col-left .title h4, #cols2 #col-left .title span {background-color:#FFF;}
+#cols2 #col-left .article {color:#DD1600;}
+#cols2 #col-left a:hover.article {color:#000;}
+
+/*#cols2 #col-right {background-color:#F5F5F5;}*/
+#cols2 #col-right h4 span {background-color:#e9faff;}
+
+/* ----------------------------------------------------------------------------------------------------------
+5) Others
+---------------------------------------------------------------------------------------------------------- */
+.successMsg {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	margin:0 auto;
+	text-align:center;
+	color:#FF0000;
+}
+
+.successMsgBlack {
+	font-family		: Arial, Helvetica, sans-serif;
+	font-size		: 10pt;
+	font-weight		: bold;
+	color			: #000000;
+}
+.high {color:#777}
+
+
+#navigation {
+	float:left;
+	width:100%;
+	font-size:14px;
+	line-height:normal;
+	overflow:hidden;
+	}
+
+#navigation ul {
+	margin:0;
+	padding:6px 5px 0 0px;
+	list-style:none;
+	
+	
+	}
+
+#navigation li {
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+
+#navigation a {
+	float:left;
+	background:url(images/left.png) no-repeat left top;
+	margin:0;
+	padding:0 0 0 6px;
+	text-decoration:none;
+	margin-left:2px;
+	}
+
+#navigation a span {
+	float:left;
+	display:block;
+	background:url(images/right.png) no-repeat right top;
+	padding:6px 15px 4px 6px;
+	margin-right:2px;
+	color:#FFF;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#navigation a span {float:none;}
+
+/* End IE5-Mac hack */
+#navigation a:hover span {
+	}
+
+#navigation a:hover {
+	color:#000;
+	}
+
+#navigation a:hover span {
+	color:#000;
+	}
+#navigation a .selected {
+	color:#000;
+	}
+	
+#navigation_line{
+    background: url("images/nav-line.jpg") repeat-x  scroll 0 0 transparent;
+    height: 3px;
+    margin:0 auto;
+}
+#map {
+	float: left;
+	width: 900px;
+	text-align: center;
+}
+.centermap {
+	height: 300px;
+	text-align: left;
+	font-size: 0.75em;
+}
+.search_label{
+font-weight:bold;
+color:#fff;
+font-size:14px;
+}
+#blanket {
+	background-color:#111;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	position:absolute;
+	z-index: 9001;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:auto;
+}
+#loginDiv{
+	position:absolute;
+	top:100px;
+	width:400px;
+	height:330px;
+	background-color:#fff;
+	border:3px solid #b3dd59;
+	padding:10px;
+	text-align:center;
+	z-index:11000
+	}
+#loginDiv input {
+	border:1px solid #ccc;
+	height:30px;
+	font-size:18px;
+	font-weight:bold;
+	line-height:30px;
+	padding-left:3px;
+	padding-right:3px;
+	width::120px;
+}	
+#popUpDiv {
+	position:absolute;
+	top:100px;
+	background-color:#ffffff;
+	width:400px;
+	height:260px;
+	z-index: 9002;
+	border:3px solid #b3dd59;
+	padding:10px;
+}
+
+#popUpDiv2 {
+	position:absolute;
+	top:100px;
+	background-color:#ffffff;
+	width:400px;
+	height:200px;
+	z-index: 9002;
+	padding:10px;
+}
+#popUpDivCity {
+	position:absolute;
+	top:100px;
+	background-color:#ffffff;
+	width:400px;
+	height:250px;
+	z-index: 9003;
+	padding:10px;
+}
+.button-center button{
+	background:url(images/but-short.png) no-repeat 0 0;
+	margin:0 auto;
+	width:135px;
+	height:27px;
+    display:block;
+	border:none;
+	padding:0px;
+
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:14px;
+    line-height:27px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#436200;
+    cursor:pointer;
+}
+a.link{
+    display:block;
+    color: #82aacd;
+    line-height:31px;
+    padding:0 5px;
+	text-decoration: none;
+}
+a.link img{
+    padding-bottom:3px;
+}
+
+.top_nav_center a.link{
+    color: #ffffff;
+	text-decoration: none;
+}
+.sub_center a.link{
+	display:block;
+	background: url("images/nav-top-divider.png") no-repeat top right transparent;
+    color: #2f80a4;
+    line-height: 30px;
+	padding-left:10px;
+	padding-right:10px;;
+}
+
+.sub_center a.nobg{
+	background: none;
+}
+a.link:hover{
+    text-decoration: none;
+}
+#home_logo{
+    padding-top:8px;float: left;
+}
+.top_menu{
+    float: left;
+    padding-left:10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.top_sub_menu{
+    float:left;
+    position:relative;
+}
+.top_menu_left{
+    float:left;
+}
+.top_menu_right{
+    float:right;
+    margin-top:12px;
+}
+.top_nav_left{
+    background: url("images/top_nav_left.png") no-repeat 0 0 transparent;
+    height:31px;
+    width:10px;
+    float: left;
+}
+.top_nav_center{
+    background: url("images/top_nav_center.png") repeat-x 0 0 transparent;
+    height:31px;
+    float: left;
+}
+.top_nav_right{
+    background: url("images/top_nav_right.png") no-repeat 0 0 transparent;
+    height:31px;
+    width:10px;
+    float: left;
+}
+.top_bg_nav_right{
+    background: url("images/top_bg_nav_right.png") repeat-x 0 0 transparent;
+    height:36px;
+    width:12px;
+    float: left;
+}
+.sub_left{
+    background: url("images/navigation-top-left.png") no-repeat 0 0 transparent;
+    height:35px;
+    width:28px;
+    float: left;
+}
+.sub_center{
+    background: url("images/navigation-top-center.png") repeat-x 0 0 transparent;
+    height:35px;
+	width:auto;
+    float: left;
+    font-size: 14px;
+	color:#2f80a4;
+	text-align:center;
+}
+.sub_right{
+    background: url("images/navigation-top-right.png") no-repeat 0 0 transparent;
+    height:35px;
+    width:28px;
+    float: left;
+}
+.top_bg_nav_left1{
+    background: url("images/top_bg_nav_left1.png") no-repeat 0 0 transparent;
+    width: 11px;
+    height: 35px;
+    float:left;
+	padding:0px;
+	margin-top:3px;
+}
+.top_bg_nav_right1{
+    background: url("images/top_bg_nav_right1.png") no-repeat 0 0 transparent;
+    width: 11px;
+    height: 35px;
+    float:left;
+	padding:0px;
+	margin-top:3px;	
+}
+.top_bg_nav_center1{
+    background: url("images/top_bg_nav_center1.png") repeat-x 0 0 transparent;
+    float:left;
+    height: 35px;
+	padding:0px;
+	margin-top:3px;	
+}
+.dashboard_wrapper {
+	position:relative;
+	width:auto;
+}
+.dash_link{
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+.dashboard_row {
+	width:auto;
+}
+.dashboard_column {
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+}
+.dashboard_column img {
+	width:78px;
+	height:100px;
+}

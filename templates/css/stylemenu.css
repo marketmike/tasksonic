@@ -1,0 +1,21 @@
+/*
+Style Name:		Active Down Arrow
+Version:		1.0
+Author:			Shabu Anower
+Author URI:		http://www.cssmenustyle.com
+*/
+
+.nav { float:left; margin: 0 auto; width: 450px; padding: 1px 0 0 0; font-size: 0.7em; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+.nav ul { margin: 0; padding: 0; list-style: none;}
+.nav ul li { padding: 0; display: inline; text-align: center; text-indent: -35px;}
+
+.nav ul li a { font-weight:bold; float: left; margin: 0 5px 0 0; color: #000000; padding: 0 0 0 45px; background: url('/menu.gif') no-repeat left 0; text-decoration: none; line-height: 20px;}
+.nav ul li a span { padding: 13px 10px 25px 0; background: url('/menu.gif') no-repeat right 0; display: block;}
+
+.nav ul li a:hover { color: #fff; background: url('/menu.gif') no-repeat left -58px;}
+.nav ul li a:hover span { background: url('/menu.gif') no-repeat right -58px;}
+
+.nav ul li.active a { background: url('/menu.gif') no-repeat left -116px;}
+.nav ul li.active a span { background: url('/menu.gif') no-repeat right -116px;}
+.nav ul li.active a:hover { background: url('/menu.gif') no-repeat left -116px;}

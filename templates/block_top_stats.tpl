@@ -1,0 +1,1 @@
+<div align="center" style="margin-top:7px;color:#fff"><font style="font-size:12px;color:#fffff;"><b>{$submitted}</b> Tasks Submitted | <b>{$awarded}</b> Currently Awarded | <b>{$active}</b> Task Open For Biddng | Our Sonic Taskers have earned  <b>${$cate2} USD</b> | <b>{$cate3}</b> registered members</h3> </font></div> 

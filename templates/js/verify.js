@@ -1,0 +1,1 @@
+function Check_Details(frmverify){	with(frmverify)	{		if(!IsEmail(verify_email, JS_Valid_Mail))		{			return false;		}				return true;	}return true;}

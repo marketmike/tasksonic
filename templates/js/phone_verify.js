@@ -1,0 +1,1 @@
+function Confirm_Click(){	with(document.frmVerify)	{		if(confirm('Are you sure you want to verify your phone number'))		{			Action.value	= 'Verify';		}	}}

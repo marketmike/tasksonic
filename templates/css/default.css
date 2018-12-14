@@ -1,0 +1,38 @@
+﻿.hidden
+{
+display: none;
+}
+
+#prevNext
+{
+margin-bottom: -4.6em;
+}
+
+#prevNext img
+{
+position: relative;
+z-index: 2;
+cursor: pointer;
+}
+
+.myclass1
+{
+margin: 0;
+color: #ffffff;
+padding: 0 1em;
+font-size: 1.5em;
+position: relative;
+top: -50px;
+line-height: 50px;
+height: 50px;
+background: black;
+opacity: .7;
+filter:alpha(opacity=70);
+}
+.b1f, .b2f, .b3f, .b4f{font-size:1px; overflow:hidden; display:block;}
+.b1f {height:1px; background:#e7e5e5; margin:0 5px;}
+.b2f {height:1px; background:#e7e5e5; margin:0 3px;}
+.b3f {height:1px; background:#e7e5e5; margin:0 2px;}
+.b4f {height:2px; background:#e7e5e5; margin:0 1px;}
+.contentf {background: #e7e5e5;}
+.contentf div {margin-left: 5px;}
